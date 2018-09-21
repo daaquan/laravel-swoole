@@ -1,5 +1,5 @@
 {
-    "name": "swooletw/laravel-swoole",
+    "name": "daaquan/laravel-swoole",
     "description": "High performance HTTP server based on Swoole. Speed up your Laravel and Lumen applications.",
     "keywords": ["swoole", "laravel", "lumen", "performance", "http", "server"],
     "license": "MIT",
@@ -11,24 +11,21 @@
         {
             "name": "Huang Yi",
             "email": "coodeer@163.com"
+        },
+        {
+            "name": "daaquan",
+            "email": "daaquan@gmail.com"
         }
     ],
     "require": {
-        "php": "^7.1",
-        "illuminate/console": "~5.1",
-        "illuminate/contracts": "~5.1",
-        "illuminate/http": "~5.1",
-        "illuminate/support": "~5.1",
-        "predis/predis": "^1.1"
+        "php": ">7.1",
+        "predis/predis": "^1.1",
+        "illuminate/http": "^5.7",
+        "illuminate/support": "^5.7",
+        "illuminate/contracts": "^5.7",
+        "illuminate/console": "^5.7"
     },
     "require-dev": {
-        "laravel/lumen-framework": "~5.1",
-        "phpunit/phpunit": "^6.1",
-        "phpunit/php-code-coverage": "^5.2",
-        "satooshi/php-coveralls": "^1.0",
-        "mockery/mockery": "~1.0",
-        "codedungeon/phpunit-result-printer": "^0.14.0",
-        "php-mock/php-mock": "^2.0"
     },
     "autoload": {
         "files": [
@@ -36,12 +33,6 @@
         ],
         "psr-4": {
             "SwooleTW\\Http\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "SwooleTW\\Http\\Tests\\": "tests",
-            "SwooleTW\\Http\\Tests\\Fixtures\\Laravel\\App\\": "tests/fixtures/laravel/app"
         }
     },
     "extra": {
